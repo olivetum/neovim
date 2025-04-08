@@ -1,0 +1,1 @@
+{"name":"personal-snippets","contributes":{"snippets":[{"path":"./javascript.json","language":["javascript","typescript","javascriptreact","typescriptreact"]},{"path":"./lua.json","language":["lua"]},{"path":"./json.json","language":["json"]}]}}
