@@ -28,7 +28,7 @@ vim.opt.inccommand = "split" -- Preview substitutions in split window
 
 -- Appearance
 vim.opt.list = true -- Show some invisible characters
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", space = "·" }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", space = "·", multispace = " · " }
 
 -- Netrw settings
 vim.g.netrw_bufsettings = "noma nomod nu rnu nobl nowrap ro"
