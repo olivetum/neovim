@@ -2,7 +2,6 @@ vim.diagnostic.config({ virtual_text = true })
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
 -- UI settings
 vim.opt.number = true         -- Show line numbers
 vim.opt.relativenumber = true -- Show relative line numbers
