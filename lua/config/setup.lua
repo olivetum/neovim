@@ -17,8 +17,8 @@ vim.opt.timeoutlen = 300 -- Time to wait for mapped sequence
 vim.opt.updatetime = 250 -- Faster completion and UI updates
 vim.opt.breakindent = true -- Indent wrapped lines
 vim.opt.undofile = true -- Save undo history
-vim.o.tabstop = 2
-vim.o.shiftwidth = 2
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 vim.o.expandtab = true
 
 -- Search settings
@@ -28,7 +28,7 @@ vim.opt.inccommand = "split" -- Preview substitutions in split window
 
 -- Appearance
 vim.opt.list = true -- Show some invisible characters
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", space = "·", multispace = " · " }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣", space = "·", multispace = "· " }
 
 -- Netrw settings
 vim.g.netrw_bufsettings = "noma nomod nu rnu nobl nowrap ro"
@@ -40,7 +40,7 @@ vim.g.have_nerd_font = true
 
 -- Clipboard settings (delayed to improve startup time)
 vim.schedule(function()
-	vim.opt.clipboard = "unnamedplus" -- Sync with system clipboard
+  vim.opt.clipboard = "unnamedplus" -- Sync with system clipboard
 end)
 
 vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#565F89", bold = true })
