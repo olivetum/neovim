@@ -30,14 +30,9 @@ return {
           "encoding",
           "fileformat",
           "filetype",
-          {
-            require("noice").api.statusline.mode.get,
-            cond = require("noice").api.statusline.mode.has,
-            color = { fg = "#ff9e64" },
-          },
         },
-        lualine_y = { "progress" },
-        lualine_z = { "location" },
+        lualine_y = { "progress", { require("recorder").displaySlots } },
+        lualine_z = { "location", { require("recorder").recordingStatus } },
       },
       inactive_sections = {
         lualine_a = {},

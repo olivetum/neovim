@@ -17,7 +17,7 @@ return {
     opts = {
       servers = {
         lua_ls = {},
-        tsserver = {},
+        ts_ls = {},
         emmet_language_server = {
           filetypes = {
             "css",
