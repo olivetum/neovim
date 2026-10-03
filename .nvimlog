@@ -1,0 +1,5 @@
+WRN 2026-10-03T12:38:11.489 ?.33796    server_start:193: Failed to start server: operation not permitted: /var/folders/fm/8r5x2kwn6p31r48d145c09b40000gn/T/nvim.olivetum/duNa9R/nvim.33796.0
+WRN 2026-10-03T12:38:17.216 ?.33816    server_start:193: Failed to start server: operation not permitted: /var/folders/fm/8r5x2kwn6p31r48d145c09b40000gn/T/nvim.olivetum/6LXL1Q/nvim.33816.0
+WRN 2026-10-03T12:40:11.813 ?.35697    server_start:193: Failed to start server: operation not permitted: /var/folders/fm/8r5x2kwn6p31r48d145c09b40000gn/T/nvim.olivetum/PIGPYi/nvim.35697.0
+WRN 2026-10-03T12:41:40.318 ?.36796    server_start:193: Failed to start server: operation not permitted: /var/folders/fm/8r5x2kwn6p31r48d145c09b40000gn/T/nvim.olivetum/cmys4Q/nvim.36796.0
+WRN 2026-10-03T12:43:18.182 ?.38684    server_start:193: Failed to start server: operation not permitted: /var/folders/fm/8r5x2kwn6p31r48d145c09b40000gn/T/nvim.olivetum/PYZZE0/nvim.38684.0
