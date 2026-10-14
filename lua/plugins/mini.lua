@@ -15,6 +15,8 @@ return { -- Collection of various small independent plugins/modules
     -- - sd'   - [S]urround [D]elete [']quotes
     -- - sr)'  - [S]urround [R]eplace [)] [']
     require("mini.surround").setup()
+    -- mini.surround disables bare `s`; keep Vim's normal-mode substitute command.
+    vim.keymap.set("n", "s", "s", { desc = "Substitute character" })
 
     -- Simple and easy statusline.
     --  You could remove this setup call if you don't like it,

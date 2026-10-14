@@ -56,13 +56,11 @@ return {
       },
     },
     config = function(_, opts)
-      local lspconfig = require("lspconfig")
-      local capabilities = require("blink.cmp").get_lsp_capabilities()
-
       for server, config in pairs(opts.servers) do
         -- Merge our enhanced capabilities with any server-specific ones
         config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
-        lspconfig[server].setup(config)
+        vim.lsp.config(server, config)
+        vim.lsp.enable(server)
       end
 
       vim.api.nvim_create_autocmd("LspAttach", {
@@ -72,7 +70,9 @@ return {
             mode = mode or "n"
             vim.keymap.set(mode, keys, func, { buffer = event.buf, desc = "LSP: " .. desc })
           end
-
+          map("K", function()
+            vim.lsp.buf.hover({ border = "rounded" })
+          end, "Hover Documentation")
           map("<leader>ln", vim.lsp.buf.rename, "[R]e[n]ame")
           map("<leader>la", vim.lsp.buf.code_action, "[G]oto Code [A]ction", { "n", "x" })
           map("<leader>lr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")

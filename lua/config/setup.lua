@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 -- UI settings
+vim.opt.winborder = "rounded"
 vim.opt.number = true -- Show line numbers
 vim.opt.relativenumber = true -- Show relative line numbers
 vim.opt.showmode = false -- Don't show mode in command line
@@ -17,8 +18,8 @@ vim.opt.timeoutlen = 300 -- Time to wait for mapped sequence
 vim.opt.updatetime = 250 -- Faster completion and UI updates
 vim.opt.breakindent = true -- Indent wrapped lines
 vim.opt.undofile = true -- Save undo history
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
+vim.o.tabstop = 8
+vim.o.shiftwidth = 8
 vim.o.expandtab = true
 
 -- Search settings

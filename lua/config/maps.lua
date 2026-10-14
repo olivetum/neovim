@@ -6,6 +6,7 @@ vim.keymap.set("n", "<C-f>", ":silent !tmux neww -d tms && tmux select-window -l
 
 -- UI keymaps
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+vim.keymap.set("n", "<Esc>", "<cmd>fclose<CR>", { desc = "Close floating windows" })
 
 -- Text manipulation
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
