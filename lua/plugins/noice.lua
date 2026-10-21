@@ -2,8 +2,14 @@ return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
 	opts = {
+		lsp = {
+			-- Blink provides the compact signature popup.
+			signature = { enabled = false },
+		},
 		views = {
 			hover = {
+				-- Leave room for the border so it doesn't cover the cursor line.
+				position = { row = 2, col = 0 },
 				border = { style = "rounded" },
 			},
 		},
